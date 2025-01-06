@@ -13,7 +13,7 @@ export default function QuestionSection({
     >
       <div className="bg-purple-700 bg-opacity-60">
         {/* First part */}
-        <div className="flex justify-between items-center p-2 pr-2 sm:pr-20 md:pr-36">
+        <div className="flex justify-between items-center p-1 pr-2 sm:pr-20 md:pr-36">
           <p className="text-white text-base sm:text-lg font-semibold">
             Question No : {currentQuestionIndex + 1} of {questions.length}
           </p>
@@ -39,7 +39,7 @@ export default function QuestionSection({
         </div>
         {/* Third part */}
         <div>
-          <p className="text-white text-base sm:text-lg font-semibold p-2">
+          <p className="text-white text-base sm:text-lg font-semibold p-1">
             Answer
           </p>
         </div>
