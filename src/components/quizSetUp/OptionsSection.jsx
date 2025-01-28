@@ -7,12 +7,12 @@ export default function OptionsSection({
   handleOptionSelect,
 }) {
   return (
-    <div className="p-6 bg-white shadow-md">
+    <div className="p-6 lg:py-7 xl:py-8 bg-white shadow-md overflow-y-auto max-h-[calc(100vh-140px)]">
       {questions[currentQuestionIndex].options.map((option, index) => (
         <div
           key={index}
           onClick={() => handleOptionSelect(index)}
-          className={`p-2 border rounded-md mb-2 cursor-pointer ${
+          className={`p-2 lg:py-3 xl:py-4 border rounded-md mb-2 cursor-pointer ${
             selectedOption === index ? 'bg-blue-300' : ''
           } ${
             answers[currentQuestionIndex] === index

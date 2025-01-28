@@ -32,7 +32,7 @@ export default function Navbar({ courseCode }) {
   }, [courseCode]);
 
   return (
-    <nav className="bg-[#212529] text-white font-semibold mb-2 flex justify-between px-2 py-3 sm:px-3 sm:py-4 md:px-4 md:py-6 pr-40">
+    <nav className="w-full h-[10%] bg-[#212529] text-white font-semibold mb-2 flex justify-between items-center">
       {courseNotFound ? (
         <span className="text-sm sm:text-base">Course Not Found</span>
       ) : (

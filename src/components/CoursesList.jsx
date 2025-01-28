@@ -56,7 +56,7 @@ const CoursesList = () => {
   );
 
   return (
-    <div className="w-3/4 px-8">
+    <div className="w-full pl-8 md:pl-0 pr-2 md:pr-0 md:px-8 lg:px-12 xl:px-20">
       <h2 className="text-2xl font-bold mb-6">AVAILABLE COURSES</h2>
       <table className="w-full table-auto border-collapse border border-gray-300">
         <thead>
@@ -86,8 +86,8 @@ const CoursesList = () => {
 
       {/* Popup Modal */}
       {popupVisible && (
-        <div className="w-full h-full fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-10 rounded-lg shadow-2xl w-1/3 text-center">
+        <div className="w-full h-full fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center px-4 sm:px-0">
+          <div className="bg-white p-4 sm:p-6 md:p-10 rounded-lg shadow-2xl w-full md:w-1/3 text-center">
             <h3 className="text-2xl font-bold mb-6">Select Preparation Type</h3>
             <div className="mb-6 space-y-6">
               {/* Mid Term Section */}
@@ -148,7 +148,7 @@ const CoursesList = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex justify-end space-x-4">
+            <div className="flex justify-center sm:justify-end space-x-4">
               <button
                 onClick={handleClosePopup}
                 className="bg-gray-500 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition"

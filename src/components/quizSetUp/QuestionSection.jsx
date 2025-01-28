@@ -13,7 +13,7 @@ export default function QuestionSection({
     >
       <div className="bg-purple-700 bg-opacity-60">
         {/* First part */}
-        <div className="flex justify-between items-center p-1 pr-2 sm:pr-20 md:pr-36">
+        <div className="flex justify-between items-center py-1 md:py-2 xl:py-4 pr-2 sm:pr-20 md:pr-36">
           <p className="text-white text-base sm:text-lg font-semibold">
             Question No : {currentQuestionIndex + 1} of {questions.length}
           </p>
@@ -32,14 +32,14 @@ export default function QuestionSection({
         {/* Second part */}
         <div className="bg-white p-1 w-full h-auto shadow-md">
           <textarea
-            className="font-bold w-full h-32 outline-none border-2 p-2"
+            className="font-bold w-full h-36 lg:h-40 xl:h-48 outline-none border-2 p-2"
             readOnly
             value={questions[currentQuestionIndex].text}
           />
         </div>
         {/* Third part */}
         <div>
-          <p className="text-white text-base sm:text-lg font-semibold p-1">
+          <p className="text-white text-base sm:text-lg font-semibold px-1 py-1 md:py-2 xl:py-4">
             Answer
           </p>
         </div>

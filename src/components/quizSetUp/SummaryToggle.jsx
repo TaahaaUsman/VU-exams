@@ -2,6 +2,7 @@ import { FaAngleDoubleRight, FaAngleDoubleLeft } from 'react-icons/fa';
 
 // SummaryToggle Component
 export default function SummaryToggle({ showSummary, setShowSummary }) {
+
   return (
     <div className="absolute right-0 top-60 z-10">
       <button

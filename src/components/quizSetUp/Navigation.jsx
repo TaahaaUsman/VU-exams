@@ -30,8 +30,8 @@ export default function Navigation({
   };
 
   return (
-    <div className="p-4 bg-gray-200">
-      <div className="flex flex-col md:flex-row justify-between">
+    <div className="w-full h-24 bg-gray-200">
+      <div className="h-full flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
         {/* Button Group - Finish Practice & Back to Courses */}
         <div className="flex flex-row gap-2 sm:gap-4 w-full md:w-auto">
           <button
@@ -51,7 +51,7 @@ export default function Navigation({
         </div>
 
         {/* Navigation Buttons - First, Last, Previous, Next */}
-        <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+        <div className="mt-2 md:mt-0 flex flex-col md:flex-row gap-4 w-full md:w-auto">
           <div className="flex w-full md:w-auto">
             <button
               onClick={handleFirst}

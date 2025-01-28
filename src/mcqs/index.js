@@ -4,6 +4,7 @@ import { cs201 } from './cs201';
 import { cs408 } from './cs408';
 import { cs510 } from './cs510';
 import { it430 } from './it430';
+import { cs205 } from './cs205';
 
 export const quizList = [
   { courseCode: 'CS001', questions: cs001 },
@@ -12,4 +13,5 @@ export const quizList = [
   { courseCode: 'CS408', questions: cs408 },
   { courseCode: 'CS510', questions: cs510 },
   { courseCode: 'IT430', questions: it430 },
+  { courseCode: 'CS205', questions: cs205 }
 ];
